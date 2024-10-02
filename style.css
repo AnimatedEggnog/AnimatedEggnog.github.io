@@ -1,0 +1,65 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+
+/* Star background styles */
+#stars, #stars2, #stars3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#stars {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png') repeat top center;
+  z-index: -1;
+  background-size: cover; /* Ensures the stars cover the entire area */
+  animation: animStar 20s linear infinite;
+}
+
+#stars2 {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars2.png') repeat top center;
+  z-index: -2;
+  background-size: cover;
+  animation: animStar 40s linear infinite;
+}
+
+#stars3 {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars3.png') repeat top center;
+  z-index: -3;
+  background-size: cover;
+  animation: animStar 60s linear infinite;
+}
+
+@keyframes animStar {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 100%; }
+}
