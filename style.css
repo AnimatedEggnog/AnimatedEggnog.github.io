@@ -63,3 +63,27 @@
   0% { background-position: 0 0; }
   100% { background-position: 0 100%; }
 }
+
+a:link {
+  color: #fff2a8;
+  background-color: transparent;
+  text-decoration: underline dotted;
+}
+
+a:visited {
+  color: #fff2a8;
+  background-color: transparent;
+  text-decoration: underline dotted;
+}
+
+a:hover {
+  color: #ffc8a8;
+  background-color: transparent;
+  text-decoration: underline dotted;
+}
+
+a:active {
+  color: #fff2a8;
+  background-color: transparent;
+  text-decoration: underline dotted;;
+}
