@@ -2,35 +2,12 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
-
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>gambling simulator</title>
+    <title>Unity WebGL Player | gambling simulator</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <style>
-  body {
-    font-family: "Ubuntu", sans-serif;
-    background-color: #28303a;
-    color:white;
-    text-align: center;
-  
-        }
-</style> 
   </head>
   <body>
-
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
-      
-      <div class="topnav">
-  <a href="../index.html">Home</a>
-  <a href="../news.html">News</a>
-  <a href="../contact.html">Contact</a>
-  <a href="../about.html">About</a>
-  <a class="active" href="gambling.html">Game</a>
-</div>
-      
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
@@ -86,7 +63,7 @@
         frameworkUrl: buildUrl + "/html build.framework.js",
         codeUrl: buildUrl + "/html build.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
+        companyName: "EggnogStudios",
         productName: "gambling simulator",
         productVersion: "1.0",
         showBanner: unityShowBanner,
@@ -121,6 +98,7 @@
         canvas.style.height = "600px";
       }
 
+      canvas.style.background = "url('" + buildUrl + "/html build.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
