@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./style.css">
+    <title>Eggnog Studios</title>
+    
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+<style>
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #28303a;
+  color:white;
+  text-align: center;
+  
+}
+
+</style>
+</head>
+<body>
+  
+  <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>
+  
+
+  
+<div class="topnav">
+  <a href="../../../index.html">Home</a>
+  <a href="../../../news.html">News</a>
+  <a href="../../../contact.html">Contact</a>
+  <a href="../../../about.html">About</a>
+  <a href="../../../gamblingsim/gambling.html">Game</a>
+  <a class="active" href="assets.html">Assets</a>
+</div>
+<h1>free assets</h1>
+<p>here are free assets, use them in your projects, credit me if you want but you dont have to
+  </p>
+
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+  <ul id="myUL">
+    <li><a href="files/goofy.mp3">goofy music, possibly for a chase scene</a></li>
+  
+
+  </ul> 
+
+
+  <div class="topnav">
+    <a href="../../assets.html">Home</a>
+    <a href="../3dmodel/assets.html">3d Models</a>
+    <a class="active" href="assets.html">Music</a>
+  </div>
+
+  <div id="footer" style="padding-top:10px;padding-bottom:10px">
+  
+    <br />
+    <br />
+    
+    <a href="https://www.youtube.com/@eggnog97">
+      <img src="../../../images/socials/youtube-removebg-preview.png" alt="youtube" style="width:42px;height:42px;">
+    </a>
+    <a href="https://www.tiktok.com/@infiniteeggnog">
+      <img src="../../../images/socials/tiktok.png" alt="tiktok" style="width:42px;height:42px;">
+    </a>
+    <a href="https://bsky.app/profile/infiniteeggnog.bsky.social">
+      <img src="../../../images/socials/blueskylogo.png" alt="bluesky" style="width:42px;height:42px;">
+    </a>
+    <a href="https://discord.gg/WgP64dZHDT">
+      <img src="../../../images/socials/discord.png" alt="discord" style="width:42px;height:42px;">
+    </a>
+  </div>
+
+</body>
+
+<script>
+  function myFunction() {
+    // Declare variables
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+  
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+  </script>
+
+</html>

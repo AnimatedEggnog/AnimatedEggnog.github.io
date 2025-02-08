@@ -87,3 +87,10 @@ a:active {
   background-color: transparent;
   text-decoration: underline dotted;;
 }
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
